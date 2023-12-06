@@ -41,18 +41,17 @@ h4 {
     font-weight: 100;
     font-size: 24pt;
     font-weight: 100;
-    margin-bottom: 1px;
-    color: #0D4B6E;
+    text-transform: uppercase;
+    margin-bottom: -10px;
 }
 
 h5 {
     font-family: "baskerville";
     font-style: italic;
     font-size: 24pt;
-    text-transform: lowercase;
     color: #BB1F25;
     font-weight: 100;
-    margin-top: 1px;
+    margin-top: -12px;
     }
 
 p {
@@ -104,7 +103,7 @@ p {
 .majestique-img,
 .silverzim-img {
     width: 100%;
-    height: auto;
+    height: 33vh;
     margin-top: 2px;
 
 .top-line {
@@ -124,6 +123,7 @@ p {
 footer {
     background-color: #3D3D3D;
     width: 100%;
+    height: 25vh;
     /*set a max height here that matches up with mockup*/
     text-align: center;
     }
