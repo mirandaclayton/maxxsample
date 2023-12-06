@@ -21,6 +21,7 @@ h1 {
     font-weight: 700;
     font-size: 28pt;
     margin-bottom: 2px;
+    color: #3D3D3D;
     }
 
 h2 {
@@ -41,6 +42,7 @@ h4 {
     font-size: 24pt;
     font-weight: 100;
     margin-bottom: 1px;
+    color: #0D4B6E;
 }
 
 h5 {
@@ -74,7 +76,10 @@ p {
 
 .hero {
     width: 100%;
-    height: auto;
+    height: 85vh;
+    background-image: url("https://raw.githubusercontent.com/mirandaclayton/maxxsample/83b459ceed1b9b5ee2da5e99e3d076a82c375a81/hero1.jpg");
+    background-size: cover;
+    background-position: center center;
     }
 
 .portfolio-div {
@@ -136,7 +141,7 @@ footer {
             </div>
     </header>
 <!--hero image at full width of page to be under the banner-->
-<img class="hero" src="https://raw.githubusercontent.com/mirandaclayton/maxxsample/83b459ceed1b9b5ee2da5e99e3d076a82c375a81/hero1.jpg">
+<div class="hero"></div>
 <!--section with heading h3, 3 sections on one line below with a heading, web address below, and img below that.-->
     <h3>Portfolio</h3>
     <div class="portfolio-div"> 
