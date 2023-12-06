@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<head>
+    <title>Sam Web Designer Portfolio</title>
+
+<style>/*Will change to external CSS, but keeping in html file for now to work on different computers more easily.*/
+
+body {
+    font-family: "helvetica neue", Helvetica, Arial, sans-serif; /*this should be helvetica neue, but does not show up on my computer.*/
+    color: #3D3D3D;
+    margin: 0;
+    }
+
+header {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    }
+
+h1 {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 28pt;
+    margin-bottom: 2px;
+    }
+
+h2 {
+    font-weight: 100;
+    font-size: 28pt;
+    margin-top: 2px;
+    }
+
+h3 {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 28pt;
+    font-weight: 700; /*says light in fonts guide, but appears to be bold in mockup*/
+    }
+
+h4 {
+    font-weight: 100;
+    font-size: 24pt;
+    font-weight: 100;
+    margin-bottom: 1px;
+}
+
+h5 {
+    font-family: "baskerville";
+    font-style: italic;
+    font-size: 24pt;
+    text-transform: lowercase;
+    color: #BB1F25;
+    font-weight: 100;
+    margin-top: 1px;
+    }
+
+p {
+    color: white;
+    font-size: 18pt;
+    font-weight: 100;
+    }
+
+.logo {
+    width: 33%;
+    }
+
+.logo-div {
+    flex: 2;
+    padding-left: 10%;
+    }
+
+.heading-div {
+    flex: 1;
+    }
+
+.hero {
+    width: 100%;
+    height: auto;
+    }
+
+.portfolio-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-items: flex-start;
+    margin-left: 10%;
+    margin-right: 10%;
+    text-align: center;
+    flex: 1;
+    }
+
+.technoline-div,
+.majestique-div,
+.silverzim-div {
+    flex: 1;
+    margin: 0 10px;
+    }
+
+.technoline-img,
+.majestique-img,
+.silverzim-img {
+    width: 100%;
+    height: auto;
+    margin-top: 2px;
+
+.top-line {
+    background-color: #0D4B6E;
+    height: 10px; /*decide how many px or % height these should be. Top is thinner than bottom.*/
+    width: 100%;
+    margin-bottom: 2px;
+    }
+
+.bottom-line {
+    background-color: #0D4B6E;
+    height: 14px;
+    width: 100%;
+    margin-bottom: 2px;
+    }
+
+footer {
+    background-color: #3D3D3D;
+    width: 100%;
+    /*set a max height here that matches up with mockup*/
+    text-align: center;
+    }
+
+    </style>
+</head>
+<body>
+    <header><!--banner with logo left aligned and h1 and h2 right aligned-->
+        <div class="logo-div">
+            <img class="logo" src="https://raw.githubusercontent.com/mirandaclayton/maxxsample/83b459ceed1b9b5ee2da5e99e3d076a82c375a81/Company-Logo.png">
+            </div>
+        <div class="heading-div">
+            <h1>Hello, I'm Sam</h1>
+            <h2>Web Designer</h2>
+            </div>
+    </header>
+<!--hero image at full width of page to be under the banner-->
+<img class="hero" src="https://raw.githubusercontent.com/mirandaclayton/maxxsample/83b459ceed1b9b5ee2da5e99e3d076a82c375a81/hero1.jpg">
+<!--section with heading h3, 3 sections on one line below with a heading, web address below, and img below that.-->
+    <h3>Portfolio</h3>
+    <div class="portfolio-div"> 
+        <div class="technoline-div">
+            <span class="top-line"></span>
+                <h4>Technoline</h4>
+                <h5>technoline.com</h5>
+                <span class="bottom-line"></span>
+                <img class="technoline-img" src="https://raw.githubusercontent.com/mirandaclayton/maxxsample/83b459ceed1b9b5ee2da5e99e3d076a82c375a81/company%20photo1.jpg">
+            </div>
+        <div class="majestique-div">
+                <span class="top-line"></span>
+                <h4>Majestique</h4>
+                <h5>majestique.com</h5>
+                <span class="bottom-line"></span>
+                <img class="majestique-img" src="https://raw.githubusercontent.com/mirandaclayton/maxxsample/83b459ceed1b9b5ee2da5e99e3d076a82c375a81/company%20photo2.jpg">
+            </div>
+        <div class="silverzim-div">
+            <span class="top-line"></span>
+                <h4>Silverzim</h4>
+                <h5>silverzim.com</h5>
+                <span class="bottom-line"></span>
+                <img class="silverzim-img" src="https://raw.githubusercontent.com/mirandaclayton/maxxsample/83b459ceed1b9b5ee2da5e99e3d076a82c375a81/company%20photo3.jpeg">
+            </div>
+</div>
+
+<footer><!--grey footer (#3D3D3D) with small white text copywrite information centered on x and y-->
+    <p>&copy; 2016 <u>Sam's Web Dev</u> All Rights Reserved.</p>
+
+    </footer>
+</body>
+</html>
