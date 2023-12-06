@@ -8,6 +8,7 @@ body {
     font-family: "helvetica neue", Helvetica, Arial, sans-serif; /*this should be helvetica neue, but does not show up on my computer.*/
     color: #3D3D3D;
     margin: 0;
+    overflow: auto;
     }
 
 header {
@@ -20,13 +21,14 @@ h1 {
     text-transform: uppercase;
     font-weight: 700;
     font-size: 28pt;
-    margin-bottom: 2px;
+    margin-bottom: 0px;
+    color: #3D3D3D;
     }
 
 h2 {
     font-weight: 100;
     font-size: 28pt;
-    margin-top: 2px;
+    margin-top: 0px;
     }
 
 h3 {
@@ -40,22 +42,23 @@ h4 {
     font-weight: 100;
     font-size: 24pt;
     font-weight: 100;
-    margin-bottom: 1px;
+    text-transform: uppercase;
+    margin-bottom: -10px;
+    margin-top: 2vh;
 }
 
 h5 {
     font-family: "baskerville";
     font-style: italic;
     font-size: 24pt;
-    text-transform: lowercase;
     color: #BB1F25;
     font-weight: 100;
-    margin-top: 1px;
+    margin-top: -12px;
+    margin-bottom: 2vh;
     }
 
-p {
-    color: white;
-    font-size: 18pt;
+.p-footer {
+    font-size: 14pt;
     font-weight: 100;
     }
 
@@ -74,18 +77,32 @@ p {
 
 .hero {
     width: 100%;
-    height: auto;
+    height: 85vh; 
+    background-image: url("https://raw.githubusercontent.com/mirandaclayton/maxxsample/83b459ceed1b9b5ee2da5e99e3d076a82c375a81/hero1.jpg");
+    background-size: cover;
+    background-position: center center;
     }
 
 .portfolio-div {
     display: flex;
     align-items: center;
     justify-content: center;
-    align-items: flex-start;
-    margin-left: 10%;
-    margin-right: 10%;
     text-align: center;
-    flex: 1;
+    height: 60vh;
+    margin: 5% 10%;
+    }
+
+.top-line {
+    height: 2px;
+    width: 100%;
+    background-color: #000000;
+    margin-bottom: 0;
+    }
+
+.bottom-line {
+    height: 4px;
+    width: 100%;
+    background-color: #000000;
     }
 
 .technoline-div,
@@ -99,28 +116,17 @@ p {
 .majestique-img,
 .silverzim-img {
     width: 100%;
-    height: auto;
-    margin-top: 2px;
-
-.top-line {
-    background-color: #0D4B6E;
-    height: 10px; /*decide how many px or % height these should be. Top is thinner than bottom.*/
-    width: 100%;
-    margin-bottom: 2px;
+    height: 33vh;
+    margin-top: 5vh;
     }
 
-.bottom-line {
-    background-color: #0D4B6E;
-    height: 14px;
-    width: 100%;
-    margin-bottom: 2px;
-    }
-
-footer {
+.footer {
     background-color: #3D3D3D;
-    width: 100%;
-    /*set a max height here that matches up with mockup*/
-    text-align: center;
+    color: white;
+    height: 25vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     }
 
     </style>
@@ -136,36 +142,38 @@ footer {
             </div>
     </header>
 <!--hero image at full width of page to be under the banner-->
-<img class="hero" src="https://raw.githubusercontent.com/mirandaclayton/maxxsample/83b459ceed1b9b5ee2da5e99e3d076a82c375a81/hero1.jpg">
+<div class="hero"></div>
 <!--section with heading h3, 3 sections on one line below with a heading, web address below, and img below that.-->
     <h3>Portfolio</h3>
     <div class="portfolio-div"> 
         <div class="technoline-div">
-            <span class="top-line"></span>
+            <div class="top-line"></div>
                 <h4>Technoline</h4>
                 <h5>technoline.com</h5>
-                <span class="bottom-line"></span>
+                <div class="bottom-line"></div>
                 <img class="technoline-img" src="https://raw.githubusercontent.com/mirandaclayton/maxxsample/83b459ceed1b9b5ee2da5e99e3d076a82c375a81/company%20photo1.jpg">
             </div>
         <div class="majestique-div">
-                <span class="top-line"></span>
+                <div class="top-line"></div>
                 <h4>Majestique</h4>
                 <h5>majestique.com</h5>
-                <span class="bottom-line"></span>
+                <div class="bottom-line"></div>
                 <img class="majestique-img" src="https://raw.githubusercontent.com/mirandaclayton/maxxsample/83b459ceed1b9b5ee2da5e99e3d076a82c375a81/company%20photo2.jpg">
             </div>
         <div class="silverzim-div">
-            <span class="top-line"></span>
+            <div class="top-line"></div>
                 <h4>Silverzim</h4>
                 <h5>silverzim.com</h5>
-                <span class="bottom-line"></span>
+                <div class="bottom-line"></div>
                 <img class="silverzim-img" src="https://raw.githubusercontent.com/mirandaclayton/maxxsample/83b459ceed1b9b5ee2da5e99e3d076a82c375a81/company%20photo3.jpeg">
             </div>
 </div>
 
-<footer><!--grey footer (#3D3D3D) with small white text copywrite information centered on x and y-->
-    <p>&copy; 2016 <u>Sam's Web Dev</u> All Rights Reserved.</p>
+<footer>
+<div class="footer">
+    <p class="p-footer">&copy; 2016 <u>Sam's Web Dev</u> All Rights Reserved.</p>
 
-    </footer>
+    </div>    
+</footer>
 </body>
 </html>
