@@ -5,7 +5,7 @@
 <style>/*Will change to external CSS, but keeping in html file for now to work on different computers more easily.*/
 
 body {
-    font-family: "helvetica neue", Helvetica, Arial, sans-serif; /*this should be helvetica neue, but does not show up on my computer.*/
+    font-family: "Helvetica Neue", helvetica, swiss, sans-serif;/*this should be helvetica neue, but does not show up on my computer.*/
     color: #3D3D3D;
     margin: 0;
     overflow: auto;
@@ -34,32 +34,34 @@ h2 {
 h3 {
     text-transform: uppercase;
     text-align: center;
-    font-size: 28pt;
+    font-size: 24pt;
     font-weight: 700; /*says light in fonts guide, but appears to be bold in mockup*/
+    margin-top: 5vh;
+    margin-bottom: 3vh;
     }
 
 h4 {
     font-weight: 100;
-    font-size: 24pt;
+    font-size: 20pt;
     font-weight: 100;
     text-transform: uppercase;
-    margin-bottom: -10px;
+    margin-bottom: -8px;
     margin-top: 2vh;
 }
 
 h5 {
     font-family: "baskerville";
     font-style: italic;
-    font-size: 24pt;
+    font-size: 18pt;
     color: #BB1F25;
     font-weight: 100;
-    margin-top: -12px;
+    margin-top: -8px;
     margin-bottom: 2vh;
     }
 
 .p-footer {
     font-size: 14pt;
-    font-weight: 100;
+    font-weight: lighter;
     }
 
 .logo {
@@ -89,20 +91,24 @@ h5 {
     justify-content: center;
     text-align: center;
     height: 60vh;
-    margin: 5% 10%;
+    margin-top: 0;
+    margin-bottom: 5%;
+    margin-left: 10%;
+    margin-right: 10%;
     }
 
 .top-line {
     height: 2px;
     width: 100%;
-    background-color: #000000;
+    background-color: #0D4B6E;
     margin-bottom: 0;
+    margin-top: 0;
     }
 
 .bottom-line {
     height: 4px;
     width: 100%;
-    background-color: #000000;
+    background-color: #0D4B6E;
     }
 
 .technoline-div,
