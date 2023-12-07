@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <head>
     <title>Sam Web Designer Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <style>/*Will change to external CSS, but keeping in html file for now to work on different computers more easily.*/
 
@@ -89,7 +90,7 @@ h5 {
 .portfolio-div {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     text-align: center;
     height: 60vh;
     margin-top: 0;
@@ -97,6 +98,14 @@ h5 {
     margin-left: 10%;
     margin-right: 10%;
     }
+
+@media (max-width: 600px) {
+    .portfolio-div {
+        flex-direction: column; /* Switch to a column layout */
+        height: auto; /* Adjust height as needed */
+        margin: 10% 10%; /* Adjust margins for spacing */
+    }
+}
 
 .top-line {
     height: 2px;
