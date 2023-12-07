@@ -34,15 +34,15 @@ h2 {
 h3 {
     text-transform: uppercase;
     text-align: center;
-    font-size: 24pt;
-    font-weight: 700; /*says light in fonts guide, but appears to be bold in mockup*/
+    font-size: 28pt;
+    font-weight: 100; /*says light in fonts guide, but appears to be bold in mockup*/
     margin-top: 5vh;
     margin-bottom: 3vh;
     }
 
 h4 {
     font-weight: 100;
-    font-size: 20pt;
+    font-size: 24pt;
     font-weight: 100;
     text-transform: uppercase;
     margin-bottom: -8px;
@@ -52,7 +52,7 @@ h4 {
 h5 {
     font-family: "baskerville";
     font-style: italic;
-    font-size: 18pt;
+    font-size: 24pt;
     color: #BB1F25;
     font-weight: 100;
     margin-top: -8px;
@@ -60,7 +60,7 @@ h5 {
     }
 
 .p-footer {
-    font-size: 14pt;
+    font-size: 18pt;
     font-weight: lighter;
     }
 
